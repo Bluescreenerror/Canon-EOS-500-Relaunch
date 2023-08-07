@@ -1,0 +1,552 @@
+/* Set the default styles for the entire page */
+body {
+    margin: 0px;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Make the body a flex container */
+    min-height: 100vh; /* Ensure the body takes at least the viewport height */
+    min-width: 100vw;
+}
+
+/* Container for the main content area */
+.content-container {
+    flex: 1; /* Make the container expand to fill the available space */
+    display: flex;
+    flex-direction: column; /* Stack the header, main content, and footer vertically */
+    justify-content: space-evenly;
+    min-width: 100vw;
+}
+
+/* Styles for selected text */
+*::selection {
+    background-color: #ed3237;
+}
+
+/* Styles for the header */
+header {
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px gray solid;
+    background-color: #d1d3d3;
+    height: 60px;
+}
+
+/* Styles for the logo and other elements inside the navigation bar */
+nav div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 0.1em;
+}
+
+/* Styles for the unordered list in the navigation bar */
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styles for the list items in the navigation bar */
+nav li {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    margin-right: 4em;
+}
+
+/* Styles for the links in the navigation bar */
+nav li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    display: block;
+    font-size: 1em;
+    /* border: 2px solid grey; */
+    /* border-radius: 10%; */
+    text-decoration: none;
+    padding: 0.18em 0.7em;
+    color: black;
+    background-color: #d1d3d3;
+    transition: color 0.5s, transform 0.7s, border 0.5s, background-color 0.6s;
+}
+
+/* Styles for the links in the navigation bar on hover */
+nav li a:hover {
+    cursor: pointer;
+    color: #ed3237;
+    background-color: #f4f4f4;
+    /* border: 2px solid black; */
+    transform: translateY(-2px);
+}
+
+/* Styles for images in the page */
+img {
+    margin-left: 1em;
+    width: auto;
+    height: 80px;
+}
+
+/* Styles for the hero section */
+.hero {
+    margin: 5em;
+    margin-bottom: 0em;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #ed3237;
+    text-align: left;
+    font-size: 2em;
+    margin: 0;
+    font-weight: 300;
+}
+
+.hero p {
+    font-size: smaller;
+    text-align: left;
+}
+
+.hero p + p {
+    color: #ed3237;
+}
+
+.hero span {
+    color: black;
+    font-weight: bold;
+}
+
+.hero img {
+    width: 420px;
+    height: auto;
+    margin-left: 2em;
+}
+
+.buy-button {
+    display: flex;
+    margin: 0em 5em;
+}
+
+.buy-button a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+    color: white;
+    background-color: #ed3237;
+    transition: color 0.5s, transform 0.4s;
+}
+
+.buy-button a:hover {
+    cursor: pointer;
+    color: #f4f4f4;
+    transform: translateY(-3px);
+}
+
+/* product html css code  */
+
+.section-1 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin: 2em;
+    margin-top: 0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-1 h2 {
+    color: #ed3237;
+    font-weight: lighter;
+    font-size: 3em;
+    border-bottom: 2px solid gray;
+    margin-top: 0.3em;
+}
+
+.section-1 img {
+    width: 540px;
+    height: auto;
+}
+
+.section-1 ul {
+    line-height: 1.5em;
+}
+
+.section-2 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    margin: 2em;
+}
+
+.section-2 h2 {
+    color: #ed3237;
+    font-weight: lighter;
+    font-size: 3em;
+    border-bottom: 2px solid gray;
+}
+
+.specifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.img-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.specifications img {
+    width: 540px;
+    height: auto;
+}
+
+.spec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.spec h4 {
+    color: #ed3237;
+    margin: 0;
+    margin-bottom: 1em;
+    padding-right: 1em;
+    border-right: 2.5px solid grey;
+}
+
+.spec p {
+    text-align: right;
+    margin: 1em 0;
+    padding-left: 1em;
+}
+
+.section-3 {
+    margin: 2em;
+}
+
+.section-3 h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ed3237;
+    font-weight: lighter;
+    font-size: 3em;
+    border-bottom: 2px solid gray;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+}
+
+.gallery-1 {
+    background-image: url(../Images/1024px-Adenostyles_alliariae_Rax2005.jpg);
+    height: 500px;
+}
+
+.gallery-2 {
+    background-image: url(../Images/800px-Bangkok_Tuk-Tuk.jpg);
+    height: 500px;
+    background-position: center; /* Sets the background image position */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-size: cover; /* Scales the background image to cover the container */
+}
+
+.gallery-3 {
+    background-image: url(../Images/AngkorThom-SouthGate.jpg);
+    height: 500px;
+    background-position: center; /* Sets the background image position */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-size: cover; /* Scales the background image to cover the container */
+}
+
+.gallery-4 {
+    background-image: url(../Images/Antequera_Gesamtansicht2004.jpg);
+    height: 500px;
+    background-position: center; /* Sets the background image position */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-size: cover; /* Scales the background image to cover the container */
+}
+
+.gallery-5 {
+    background-image: url(../Images/Koh_Phangan_Haad_Rin_sunset2.jpg);
+    height: 500px;
+    background-position: center; /* Sets the background image position */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-size: cover; /* Scales the background image to cover the container */
+}
+
+.gallery-6 {
+    background-image: url(../Images/Korkeiche_Andalusien2004.jpg);
+    height: 500px;
+    background-position: center; /* Sets the background image position */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-size: cover; /* Scales the background image to cover the container */
+}
+
+.about-main h2 {
+    font-weight: lighter;
+    color: #ed3237;
+    font-size: 3em;
+    text-align: center;
+}
+
+.about-main p {
+    width: 50%;
+    text-align: center;
+}
+
+.about-main section {
+    margin-bottom: 2em;
+}
+
+.about-hero {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../Images/Support-GeneralCorporate-Hero.jpg);
+    height: 450px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 1px 5px black;
+    background-position: center; /* Sets the background image position */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-size: cover; /* Scales the background image to cover the container */
+}
+
+.about-section-2 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../Images/AboutCanon-History_Hero-Short_1920x750.jpg);
+    height: 450px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 1px 5px black;
+    background-position: center; /* Sets the background image position */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-size: cover; /* Scales the background image to cover the container */
+}
+
+.about-section-3 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../Images/AboutCanon-Kyosei-9_Hero-Short_1920x750.jpg);
+    height: 450px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 1px 5px black;
+    background-position: center; /* Sets the background image position */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-size: cover; /* Scales the background image to cover the container */
+}
+
+.about-section-4 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(../Images/Abstract-Interior_Hero-Short_1920x750.jpg);
+    height: 450px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 1px 5px black;
+    background-position: center; /* Sets the background image position */
+    background-repeat: no-repeat; /* Prevents background image repetition */
+    background-size: cover; /* Scales the background image to cover the container */
+}
+
+.contact-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 1em;
+    border-bottom: 2px solid grey;
+}
+
+.contact-hero h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ed3237;
+    font-weight: lighter;
+    font-size: 3em;
+    text-align: center;
+}
+
+.form input {
+    font-family: 'Montserrat', sans-serif;
+    width: 20em;
+    text-align: center;
+    height: 1.5em;
+}
+
+.search-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    display: block;
+    font-size: 1.5em;
+    /* border: 2px solid grey; */
+    /* border-radius: 10%; */
+    text-decoration: none;
+    padding: 0.18em 0.7em;
+    color: black;
+    background-color: #d1d3d3;
+    transition: color 0.5s, transform 0.7s, border 0.5s, background-color 0.6s;
+    margin-top: 1em;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    color: #ed3237;
+    background-color: #f4f4f4;
+    /* border: 2px solid black; */
+    transform: translateY(-2px);
+}
+
+.contact-option {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-option h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #ed3237;
+    font-weight: lighter;
+    font-size: 3em;
+    text-align: center;
+}
+
+.email {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 1.3em;
+    color: black;
+    text-decoration: underline;
+    transition: color 0.5s;
+}
+
+.email:hover {
+    cursor: pointer;
+    color: #ed3237;
+    /* border: 2px solid black; */
+}
+
+/* --------------------------------- Footer css ------------------------------------*/
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 3em;
+    border-top: 2px solid grey;
+    background-color: #d1d3d3;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-column-2 {
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 0.5em 1.4em;
+    text-decoration: none;
+    color: white;
+    background-color: #ed3237;
+}
+
+.footer-heading {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ed3237;
+    text-transform: uppercase;
+}
+
+.footer-subtext {
+    font-size: 16px;
+    line-height: 1.35;
+    color: black;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    margin-bottom: 0.5em;
+}
+
+.footer-list li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-list li a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1000px) {
+    .hero {
+        margin: 5em;
+        margin-bottom: 0em;
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .buy-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+    }
+
+    .features {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5em;
+    }
+}
